@@ -2,10 +2,16 @@
 """
 Created on Thu Feb 13 09:59:30 2020
 
+CREDENTIALS
+Contain TWILIO API info and number to alert
+
 @author: Valentin
 """
 
-TWILIO_ACCOUNT_SID = 'ACdc6f7de6bed8c35a63a631e3ff68f45c'
-TWILIO_AUTH_TOKEN = '6a707d0a84398f6bcb59ea7112da1237'
-TWILIO_PHONE = '+1 619 825 2446'
-PHONE_NUMBER = '+33 6 10 51 62 21'
+#Twilio credentials
+TWILIO_ACCOUNT_SID = 'example'
+TWILIO_AUTH_TOKEN = 'example'
+TWILIO_PHONE = '+0 123 456 789'
+
+#The phone you want to text
+PHONE_NUMBER = '+11 1 11 11 11 11'

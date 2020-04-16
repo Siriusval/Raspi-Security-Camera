@@ -2,6 +2,13 @@
 """
 Created on Thu Feb  6 22:57:34 2020
 
+SECURITY CAMERA
+MAIN PROGRAM
+
+This program get a video feed from webcam.
+Then it detect movement thanks to image recognition algortithms.
+Then it text the owner's phone with Twilio API
+
 @author: Valentin
 """
 
@@ -92,7 +99,7 @@ while True:
                 #Send message if first warning
                 if (is_first_message):
                     #send text message
-                    #client.messages.create(body='Intruder Alert!',from_=TWILIO_PHONE,to=PHONE_NUMBER)
+                    client.messages.create(body='Intruder Alert!',from_=TWILIO_PHONE,to=PHONE_NUMBER)
                     is_first_message = False
             
             #Store current frame as new reference for comparison
