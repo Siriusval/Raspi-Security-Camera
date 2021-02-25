@@ -99,7 +99,7 @@ while True:
                 #Send message if first warning
                 if (is_first_message):
                     #send text message
-                    client.messages.create(body='Intruder Alert!',from_=TWILIO_PHONE,to=PHONE_NUMBER)
+                    #client.messages.create(body='Intruder Alert!',from_=TWILIO_PHONE,to=PHONE_NUMBER)
                     is_first_message = False
             
             #Store current frame as new reference for comparison
